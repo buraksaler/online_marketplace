@@ -23,3 +23,9 @@ def new(request):
     form = NewItemForm()
   
   return render(request, 'item/form.html', {'form': form, 'title': 'New Item'})
+
+@login_required
+def delete(request, item_id):
+  item = get_object_or_404(Item, pk=item_id, created_by=request.user)
+  item.delete()
+  return redirect('dashboard:index')
