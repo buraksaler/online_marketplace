@@ -12,6 +12,12 @@ def index(request):
 def contact(request):
     return render(request, 'core/contact.html')
 
+def policy(request):
+    return render(request, 'core/policy.html')
+
+def termsOfUse(request):
+    return render(request, 'core/termsofuse.html')
+
 def signup(request):
     if request.method == 'POST':
         form = SignupForm(request.POST)
