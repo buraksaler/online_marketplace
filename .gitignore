@@ -1,3 +1,4 @@
 puddle/db.sqlite3
 *.pyc
 venv/
+puddle/media/item_images/
