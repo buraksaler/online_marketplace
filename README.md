@@ -1,6 +1,5 @@
 # online_marketplace
-Simple Online Marketplace Project 
-Django and PostgreSQL
+Simple Online Marketplace Project built with Django and PostgreSQL
 
 I implemented:
 
