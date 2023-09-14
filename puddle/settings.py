@@ -84,12 +84,8 @@ WSGI_APPLICATION = 'puddle.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd9ak8bon3jsbrp',
-        'USER': 'hfsskgtpxzyjre',
-        'PASSWORD': '9bcdbeb17c48a30c99efbc1a83b75cca4747fef08b2858b45625e121b0f3050d',
-        'HOST': 'ec2-52-215-68-14.eu-west-1.compute.amazonaws.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
